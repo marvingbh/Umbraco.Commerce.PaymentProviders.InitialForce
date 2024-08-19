@@ -14,7 +14,7 @@ using Umbraco.Commerce.Core.Models;
 using Umbraco.Commerce.Core.PaymentProviders;
 using StripeTaxRate = Stripe.TaxRate;
 
-namespace Umbraco.Commerce.PaymentProviders.Stripe
+namespace Umbraco.Commerce.PaymentProviders.InitialForce
 {
     public abstract class StripePaymentProviderBase<TSelf, TSettings> : PaymentProviderBase<TSettings>
         where TSelf : StripePaymentProviderBase<TSelf, TSettings>

@@ -1,6 +1,6 @@
 using Umbraco.Commerce.Core.PaymentProviders;
 
-namespace Umbraco.Commerce.PaymentProviders.Stripe
+namespace Umbraco.Commerce.PaymentProviders.InitialForce
 {
     public class StripeCheckoutSettings : StripeSettingsBase
     {

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Umbraco.Commerce.PaymentProviders.Stripe
+namespace Umbraco.Commerce.PaymentProviders.InitialForce
 {
     // Stripped down Stripe webhook event which should
     // hopefully work regardless of webhook API version.

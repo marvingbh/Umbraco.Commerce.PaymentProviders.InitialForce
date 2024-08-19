@@ -17,9 +17,9 @@ using Umbraco.Commerce.Extensions;
 using CustomerService = Stripe.CustomerService;
 using RefundService = Stripe.RefundService;
 
-namespace Umbraco.Commerce.PaymentProviders.Stripe
+namespace Umbraco.Commerce.PaymentProviders.InitialForce
 {
-    [PaymentProvider("stripe-checkout")]
+    [PaymentProvider("initialforce-stripe-checkout")]
     public class StripeCheckoutPaymentProvider : StripePaymentProviderBase<StripeCheckoutPaymentProvider, StripeCheckoutSettings>
     {
         public StripeCheckoutPaymentProvider(UmbracoCommerceContext ctx, ILogger<StripeCheckoutPaymentProvider> logger)
@@ -678,7 +678,7 @@ namespace Umbraco.Commerce.PaymentProviders.Stripe
                 ? Context.Services.CountryService.GetCountry(ctx.Order.PaymentInfo.CountryId.Value)
                 : null;
 
-            if (!string.IsNullOrWhiteSpace(ctx.Order.Properties["stripeCustomerId"]))
+            if (!string.IsNullOrWhiteSpace(ctx.Order.Properties[" "]))
             {
                 var customerOptions = new CustomerUpdateOptions
                 {
